@@ -1,0 +1,16 @@
+:host {
+  display: inline-block;
+  width: 100px;
+  font-size: 1rem;
+
+  padding: 5px;
+  background-color: white;
+  margin: 5px;
+}
+
+.prims {
+  font-size: .8rem;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

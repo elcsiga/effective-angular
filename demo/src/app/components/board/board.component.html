@@ -1,0 +1,7 @@
+<div>
+  <app-card
+    *ngFor="let item of items"
+    [item] = "item"
+    (toggle)="toggle($event)"
+  ></app-card>
+</div>
