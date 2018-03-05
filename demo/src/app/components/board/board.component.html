@@ -1,7 +1,12 @@
 <div>
+  <button (click)="invertSelection()">Invert selection</button>
+  <h3>Angular Performance Test</h3>
+</div>
+<div>
   <app-card
     *ngFor="let item of items; let i = index"
     [item] = "item"
     (toggle)="toggle(i)"
   ></app-card>
 </div>
+

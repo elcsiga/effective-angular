@@ -13,6 +13,7 @@ export class NumberService {
         prims.push(i);
       }
     }
+    console.log(prims);
     return prims;
   }
 
