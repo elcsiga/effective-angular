@@ -15,14 +15,17 @@ export class CardComponent implements OnInit {
   item: Item;
 
   @Output()
-  toggle = new EventEmitter<number>();
+  toggle = new EventEmitter<void>();
 
   ngOnInit() {
   }
 
-  getFactorization(): string {
-    console.log(this.item.num);
-    return this.numberService.factorize(this.item.num).join('*') || 'PRIM';
+  isPrim(): boolean {
+    //return false;
+    return this.numberService.factorize(this.item.num).length === 0;
   }
 
+  isSelected(): boolean {
+    return this.item.selected;
+  }
 }

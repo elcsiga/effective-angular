@@ -6,13 +6,15 @@ import { NumberService} from "./services/number.service";
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { BoardComponent } from './components/board/board.component';
+import { FpsMeterComponent } from './fps-meter/fps-meter.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    BoardComponent
+    BoardComponent,
+    FpsMeterComponent
   ],
   imports: [
     BrowserModule

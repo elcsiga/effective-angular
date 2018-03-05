@@ -13,15 +13,15 @@ export class BoardComponent implements OnInit {
   items: Item[] = [];
 
   ngOnInit() {
-    for (let i = 0; i < 4000; i++) {
+    for (let i = 2; i < 400; i++) {
       this.items.push({
-        num: i,
-        id: i
+        num: Math.ceil(Math.random() * 20000),
+        selected: false
       })
     }
   }
 
-  toggle(id: number) {
-    this.items[id].num ++;
+  toggle(index: number) {
+    this.items[index].selected = !this.items[index].selected;
   }
 }
