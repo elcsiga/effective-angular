@@ -22,25 +22,26 @@ export class BoardComponent implements OnInit {
   }
 
   toggle(index: number) {
-    //this.items[index].selected = !this.items[index].selected;
+    this.items[index].selected = !this.items[index].selected;
 
+    /*
     this.items[index] = {
       ...this.items[index],
       selected: !this.items[index].selected
-    }
+    }*/
   }
 
   invertSelection() {
-    //this.items.forEach ( (item, index) => {
-    //  this.items[index].selected = !item.selected
-    //});
+    this.items.forEach ( (item, index) => {
+      this.items[index].selected = !item.selected
+    });
 
 
-    this.items.forEach ( (item, index) => (
+    /*this.items.forEach ( (item, index) => (
       this.items[index] = {
         ...item,
         selected: !item.selected
       }
-    ));
+    ));*/
   }
 }
