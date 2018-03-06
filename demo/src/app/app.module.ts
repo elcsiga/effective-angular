@@ -6,7 +6,8 @@ import { NumberService} from "./services/number.service";
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { BoardComponent } from './components/board/board.component';
-import { FpsMeterComponent } from './fps-meter/fps-meter.component';
+import { FpsMeterComponent } from './components/fps-meter/fps-meter.component';
+import { IsPrimPipe } from './pipes/is-prim.pipe';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FpsMeterComponent } from './fps-meter/fps-meter.component';
     AppComponent,
     CardComponent,
     BoardComponent,
-    FpsMeterComponent
+    FpsMeterComponent,
+    IsPrimPipe
   ],
   imports: [
     BrowserModule

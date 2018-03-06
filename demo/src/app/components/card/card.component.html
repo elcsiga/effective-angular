@@ -1,6 +1,6 @@
 <div
   (click)="toggle.emit()"
-  [ngClass]="{'prim': isPrim(), 'selected': isSelected()}"
+  [ngClass]="{'prim': item.num | isPrim, 'selected': isSelected()}"
 >
   {{item.num}}
 </div>

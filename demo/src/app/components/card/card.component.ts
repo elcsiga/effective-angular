@@ -6,7 +6,7 @@ import {NumberService} from "../../services/number.service";
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  //changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CardComponent implements OnInit {
 
